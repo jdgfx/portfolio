@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About — Josh Diaz</title>
-    <!-- Google Fonts Replacement -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@0,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,600;1,700&display=swap" rel="stylesheet">
     
     <style>
         * {
@@ -17,12 +17,12 @@
         }
 
         body {
-            background-color: #fcfbf7; /* Light Cream Background */
-            color: #2b2b2b; /* Charcoal Body Text */
+            background-color: #f5f0eb; /* Warmer Cream Background */
+            color: #3a3532; /* Brownish-Charcoal Text */
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             font-weight: 400;
             font-size: 1.125rem;
-            line-height: 1.8;
+            line-height: 1.85;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             min-height: 100vh;
@@ -49,7 +49,7 @@
         .logo-container svg {
             height: 28px;
             width: auto;
-            color: #1a1a1a;
+            color: #24201e;
         }
 
         nav {
@@ -60,18 +60,18 @@
         }
 
         nav a {
-            font-family: 'Inter', sans-serif;
-            font-weight: 700;
-            color: #71717a;
+            font-family: 'Playfair Display', Georgia, serif;
+            font-style: italic;
+            font-weight: 600;
+            color: #78706a;
             text-decoration: none;
-            font-size: 0.95rem;
-            text-transform: uppercase;
-            letter-spacing: 0.12em;
+            font-size: 1.15rem;
+            text-transform: none; /* Title / Sentence Case Everywhere */
             transition: color 0.2s ease;
         }
 
         nav a:hover, nav a.active {
-            color: #1a1a1a; /* Charcoal Hover/Active */
+            color: #24201e; /* Darker Warm Charcoal */
         }
 
         /* Main Single-Column Container */
@@ -79,7 +79,7 @@
             flex: 1;
             display: flex;
             justify-content: center;
-            padding: 3rem 1.5rem 6rem;
+            padding: 4rem 1.5rem 6rem;
             width: 100%;
         }
 
@@ -88,34 +88,21 @@
             max-width: 720px;
             display: flex;
             flex-direction: column;
-            gap: 2.5rem;
-        }
-
-        /* Section Title */
-        .section-title {
-            font-family: 'Inter', sans-serif;
-            font-size: 1.5rem; 
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.14em;
-            color: #1a1a1a;
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid #e2ded4;
+            gap: 2rem;
         }
 
         .bio-paragraph {
-            font-size: 1.15rem;
+            font-size: 1.18rem;
             line-height: 1.85;
-            color: #2b2b2b;
+            color: #3a3532;
             margin-bottom: 1.5rem;
         }
 
         /* CTA Section */
         .cta-section {
-            margin-top: 1.5rem;
+            margin-top: 1rem;
             padding-top: 2.5rem;
-            border-top: 1px solid #e2ded4;
+            border-top: 1px solid #e3dcd4;
         }
 
         .cta-section h2 {
@@ -123,35 +110,34 @@
             font-size: 2.25rem;
             font-weight: 700;
             font-style: italic;
-            color: #1a1a1a;
+            color: #24201e;
             margin-bottom: 0.5rem;
             line-height: 1.3;
         }
 
         .cta-section p {
-            color: #52525b;
+            color: #635c56;
             font-size: 1.08rem;
             margin-bottom: 1.75rem;
         }
 
         .cta-button {
             display: inline-block;
-            background-color: #1a1a1a; /* Dark Charcoal Button */
-            color: #fcfbf7; /* Cream Text */
+            background-color: #24201e; /* Brownish-Charcoal Button */
+            color: #f5f0eb; /* Warm Cream Text */
             font-family: 'Inter', sans-serif;
             text-decoration: none;
             padding: 0.9rem 1.85rem;
             border-radius: 4px;
             font-size: 0.95rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
+            font-weight: 600;
+            letter-spacing: 0.05em;
             transition: opacity 0.2s ease, background-color 0.2s ease;
         }
 
         .cta-button:hover {
-            opacity: 0.85;
-            background-color: #333333;
+            opacity: 0.9;
+            background-color: #3a3532;
         }
 
         /* Mobile Adjustments */
@@ -164,7 +150,7 @@
             }
 
             main {
-                padding: 2rem 1.25rem 4rem;
+                padding: 2.5rem 1.25rem 4rem;
             }
 
             .cta-section h2 {
@@ -196,18 +182,17 @@
             </a>
         </div>
         <nav>
-            <a href="index.html">reel</a>
-            <a href="#work">work</a>
-            <a href="about.html" class="active">about</a>
-            <a href="contact.html">contact</a>
-            <a href="Resume-JoshDiaz.pdf" download="Resume-JoshDiaz.pdf" target="_blank">resume</a>
+            <a href="index.html">Reel</a>
+            <a href="#work">Work</a>
+            <a href="about.html" class="active">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="Resume-JoshDiaz.pdf" download="Resume-JoshDiaz.pdf" target="_blank">Resume</a>
         </nav>
     </header>
 
     <main>
         <div class="content-container">
             <section>
-                <h3 class="section-title">Background</h3>
                 <p class="bio-paragraph">
                     Josh Diaz is a Creative Director and Multimedia Producer with over 15 years of experience leading visual storytelling, motion design, and high-impact media production. Based out of Olney, MD, he specializes in building carefully curated visual systems, promotional campaigns, and brand experiences across broadcast, digital, and environmental mediums.
                 </p>
