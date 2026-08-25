@@ -66,20 +66,102 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 2rem 1.5rem 4rem;
+            padding: 2rem 1.5rem 5rem;
             width: 100%;
         }
 
-        .content-container {
+        .contact-container {
             width: 100%;
-            max-width: 600px;
+            max-width: 560px;
         }
 
         h1 {
             font-size: 2rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 0.5rem;
             font-weight: 600;
             letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            color: #a1a1aa;
+            font-size: 0.95rem;
+            margin-bottom: 2.5rem;
+        }
+
+        /* Form Layout & Styles */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        label {
+            font-size: 0.85rem;
+            color: #a1a1aa;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        input, textarea {
+            width: 100%;
+            background-color: #0a0a0a;
+            border: 1px solid #27272a;
+            border-radius: 6px;
+            padding: 0.85rem 1rem;
+            color: #ffffff;
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: border-color 0.2s ease, outline 0.2s ease;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #ffffff;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 140px;
+        }
+
+        button[type="submit"] {
+            margin-top: 0.5rem;
+            background-color: #ffffff;
+            color: #000000;
+            border: none;
+            border-radius: 6px;
+            padding: 0.9rem 1.5rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+        }
+
+        button[type="submit"]:hover {
+            opacity: 0.85;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                padding: 1.5rem;
+            }
+
+            nav {
+                gap: 1.25rem;
+            }
+
+            .logo-container svg {
+                height: 22px;
+            }
         }
     </style>
 </head>
@@ -93,7 +175,7 @@
                   <g id="Layer_1-2" data-name="Layer 1" fill="currentColor">
                     <g>
                       <path d="M32.7,54.4c0,9-4.2,12.7-11.4,12.7-8.4,0-12.4-3.8-12.4-16.5v-.7H0v1c0,16.6,8.1,23.6,21,23.6,13.8,0,20.7-8.1,20.7-19.5V1.6h-9v52.8Z"/>
-                      <path d="M86.5,0c-21.6,0-35,15.9-35,37.3s13.4,37.3,35,37.3,35-15.9,35-37.3S108.1,0,86.5,0ZM86.5,66.7c-16.8,0-25.8-12.6-25.8-29.4s9-29.5,25.8-29.5,25.8,12.7,25.8,29.5-9,29.4-25.8,29.4Z"/>
+                      <path d="M86.5,0c-21.6,0-35,15.9-35,37.3s13.4,37.3,35,37.3,35-15.9,35-37.3S108.1,0,86.5,0ZM86.5,66.7c-16.8,0-25.8-12.6-25.8-29.4s9-29.5,25.8-29.5,25.8,12.7,25.8,29.4-9,29.4-25.8,29.4Z"/>
                       <path d="M157.9,31.3c-10.7-2.1-18.7-4.5-18.7-12.6,0-7.4,6.4-11.5,16.1-11.5,10.5,0,17.1,5.1,18.4,15.3h8.5c-1.8-13.2-9.2-22.3-27.1-22.3-14.5,0-24.3,7.1-24.3,18.9,0,13.5,10.8,17.1,23.4,19.9,12.8,2.8,21.4,5.1,21.4,14.9,0,8.9-7.1,13.4-17,13.4-13.5,0-20.9-6.3-22.1-18.4h-8.8c.8,14.4,10.4,25.6,30.5,25.6,15.4,0,26.3-7.5,26.3-20.9,0-16.1-12.7-19.5-26.6-22.3Z"/>
                       <polygon points="245 32 206.8 32 206.8 1.6 197.8 1.6 197.8 73.1 206.8 73.1 206.8 39.3 245 39.3 245 73.1 254 73.1 254 1.6 245 1.6 245 32"/>
                       <path d="M318,1.6h-30.5v71.5h29.4c9,0,16.2-2.3,21.8-6.5,8-6.1,12.4-16.2,12.4-28.8,0-21.9-13.3-36.2-33.1-36.2ZM315.6,58.2h-10.4V16.4h10.6c11.1,0,17.4,8.4,17.4,21.4s-6,20.4-17.6,20.4Z"/>
@@ -114,9 +196,33 @@
     </header>
 
     <main>
-        <div class="content-container">
-            <h1>Contact</h1>
-            <p style="color: #a1a1aa;">Form coming soon...</p>
+        <div class="contact-container">
+            <h1>Get in touch</h1>
+            <p class="subtitle">Have a project in mind or want to collaborate? Send a message below.</p>
+
+            <form action="https://formspree.io/f/mkjwdboy" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Project inquiry, dynamic graphics, etc.">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
         </div>
     </main>
 
