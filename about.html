@@ -15,11 +15,11 @@
         }
 
         body {
-            background-color: #000000;
-            color: #ffffff;
+            background-color: #1a1a1a; /* Resume Charcoal Background */
+            color: #f4f4f0; /* Resume Off-White Body Text */
             font-family: "freight-micro-pro", Georgia, serif;
             font-weight: 400;
-            font-size: 1.18rem; /* Bumped up by 2pt */
+            font-size: 1.18rem;
             line-height: 1.75;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
@@ -47,7 +47,7 @@
         .logo-container svg {
             height: 28px;
             width: auto;
-            color: #ffffff;
+            color: #f4f4f0;
         }
 
         nav {
@@ -69,7 +69,7 @@
         }
 
         nav a:hover, nav a.active {
-            color: #ffffff;
+            color: #d4a359; /* Resume Amber Highlight */
         }
 
         /* Main Container */
@@ -90,17 +90,17 @@
             max-width: 1100px;
         }
 
-        /* Section Headings using Zuume - Increased Size */
+        /* Section Headings using Zuume - Increased by 20% to 1.5rem */
         .section-title {
             font-family: "zuume", "Arial Black", sans-serif;
-            font-size: 1.25rem; /* Increased size */
+            font-size: 1.5rem; 
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.14em;
-            color: #ffffff;
+            color: #d4a359; /* Resume Amber Color */
             margin-bottom: 1.25rem;
             padding-bottom: 0.4rem;
-            border-bottom: 1px solid #27272a;
+            border-bottom: 1px solid #333336;
         }
 
         /* Sidebar (Left Column) */
@@ -109,7 +109,7 @@
             flex-direction: column;
             gap: 2.5rem;
             padding-right: 1.5rem;
-            border-right: 1px solid #27272a;
+            border-right: 1px solid #333336;
         }
 
         .summary-text {
@@ -122,13 +122,14 @@
             margin-bottom: 1.25rem;
         }
 
+        /* Freight Micro Pro Bold Italic requested element */
         .education-item h4 {
-            font-family: "zuume", "Arial Black", sans-serif;
+            font-family: "freight-micro-pro", Georgia, serif;
             font-size: 1.15rem;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: #ffffff;
             font-weight: 700;
+            font-style: italic;
+            color: #f4f4f0;
+            line-height: 1.4;
         }
 
         .education-item p {
@@ -139,6 +140,16 @@
 
         .skills-group {
             margin-bottom: 1.5rem;
+        }
+
+        /* Freight Micro Pro Bold Italic requested element */
+        .skills-group h4.freight-bold-italic {
+            font-family: "freight-micro-pro", Georgia, serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            font-style: italic;
+            color: #d4a359;
+            margin-bottom: 0.5rem;
         }
 
         .skills-group h4 {
@@ -168,7 +179,7 @@
         }
 
         .bio-paragraph {
-            font-size: 1.18rem; /* Bumped up by 2pt */
+            font-size: 1.18rem;
             line-height: 1.8;
             color: #d4d4d8;
             margin-bottom: 1.25rem;
@@ -178,15 +189,16 @@
         .cta-section {
             margin-top: 1rem;
             padding-top: 2rem;
-            border-top: 1px solid #27272a;
+            border-top: 1px solid #333336;
         }
 
+        /* Freight Micro Pro Bold Italic requested element */
         .cta-section h2 {
-            font-family: "zuume", "Arial Black", sans-serif;
-            font-size: 1.65rem;
+            font-family: "freight-micro-pro", Georgia, serif;
+            font-size: 1.85rem;
             font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
+            font-style: italic;
+            color: #f4f4f0;
             margin-bottom: 0.5rem;
         }
 
@@ -198,21 +210,22 @@
 
         .cta-button {
             display: inline-block;
-            background-color: #ffffff;
-            color: #000000;
+            background-color: #d4a359; /* Resume Gold Button */
+            color: #1a1a1a;
             font-family: "zuume", "Arial Black", sans-serif;
             text-decoration: none;
             padding: 0.85rem 1.75rem;
-            border-radius: 6px;
+            border-radius: 4px;
             font-size: 1.05rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            transition: opacity 0.2s ease;
+            transition: opacity 0.2s ease, background-color 0.2s ease;
         }
 
         .cta-button:hover {
-            opacity: 0.85;
+            opacity: 0.9;
+            background-color: #e5b46a;
         }
 
         /* Mobile Layout Adjustment */
@@ -235,7 +248,7 @@
 
             .sidebar {
                 border-right: none;
-                border-bottom: 1px solid #27272a;
+                border-bottom: 1px solid #333336;
                 padding-right: 0;
                 padding-bottom: 2.5rem;
             }
@@ -294,14 +307,14 @@
                     </div>
                     <div class="education-item">
                         <h4>B.S. Media Comm. &amp; Technology</h4>
-                        <p>East Stroudsburg University</p>
+                        <p>Pennsylvania University</p>
                     </div>
                 </div>
 
                 <div>
                     <h3 class="section-title">Skills</h3>
                     <div class="skills-group">
-                        <h4>Cross-Functional</h4>
+                        <h4 class="freight-bold-italic">Cross-Functional</h4>
                         <ul class="skills-list">
                             <li>Creative Direction</li>
                             <li>Team Leadership</li>
@@ -340,7 +353,7 @@
                 </div>
 
                 <div class="cta-section">
-                    <h2>Let’s build something lasting.</h2>
+                    <h2>Let's create something.</h2>
                     <p>Available for creative direction, visual strategy, and end-to-end multimedia production.</p>
                     <a href="contact.html" class="cta-button">Get in Touch</a>
                 </div>
