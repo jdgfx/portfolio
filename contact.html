@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Josh Diaz</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            padding: 2.5rem 3rem;
+            width: 100%;
+        }
+
+        .logo-container {
+            grid-column: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-container svg {
+            height: 28px;
+            width: auto;
+            color: #ffffff;
+        }
+
+        nav {
+            grid-column: 3;
+            justify-self: end;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #a1a1aa;
+            text-decoration: none;
+            font-size: 0.95rem;
+            text-transform: lowercase;
+            letter-spacing: 0.05em;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover, nav a.active {
+            color: #ffffff;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 1.5rem 4rem;
+            width: 100%;
+        }
+
+        .content-container {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div></div>
+        <div class="logo-container">
+            <a href="index.html" style="display: flex; text-decoration: none;">
+                <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 521.5 74.6">
+                  <g id="Layer_1-2" data-name="Layer 1" fill="currentColor">
+                    <g>
+                      <path d="M32.7,54.4c0,9-4.2,12.7-11.4,12.7-8.4,0-12.4-3.8-12.4-16.5v-.7H0v1c0,16.6,8.1,23.6,21,23.6,13.8,0,20.7-8.1,20.7-19.5V1.6h-9v52.8Z"/>
+                      <path d="M86.5,0c-21.6,0-35,15.9-35,37.3s13.4,37.3,35,37.3,35-15.9,35-37.3S108.1,0,86.5,0ZM86.5,66.7c-16.8,0-25.8-12.6-25.8-29.4s9-29.5,25.8-29.5,25.8,12.7,25.8,29.5-9,29.4-25.8,29.4Z"/>
+                      <path d="M157.9,31.3c-10.7-2.1-18.7-4.5-18.7-12.6,0-7.4,6.4-11.5,16.1-11.5,10.5,0,17.1,5.1,18.4,15.3h8.5c-1.8-13.2-9.2-22.3-27.1-22.3-14.5,0-24.3,7.1-24.3,18.9,0,13.5,10.8,17.1,23.4,19.9,12.8,2.8,21.4,5.1,21.4,14.9,0,8.9-7.1,13.4-17,13.4-13.5,0-20.9-6.3-22.1-18.4h-8.8c.8,14.4,10.4,25.6,30.5,25.6,15.4,0,26.3-7.5,26.3-20.9,0-16.1-12.7-19.5-26.6-22.3Z"/>
+                      <polygon points="245 32 206.8 32 206.8 1.6 197.8 1.6 197.8 73.1 206.8 73.1 206.8 39.3 245 39.3 245 73.1 254 73.1 254 1.6 245 1.6 245 32"/>
+                      <path d="M318,1.6h-30.5v71.5h29.4c9,0,16.2-2.3,21.8-6.5,8-6.1,12.4-16.2,12.4-28.8,0-21.9-13.3-36.2-33.1-36.2ZM315.6,58.2h-10.4V16.4h10.6c11.1,0,17.4,8.4,17.4,21.4s-6,20.4-17.6,20.4Z"/>
+                      <rect x="361.1" y="1.6" width="17.7" height="71.5"/>
+                      <path d="M412.3,1.6l-25.7,71.5h17.8l4.1-12.9h25l4.2,12.9h18.6L430.5,1.6h-18.2ZM412.6,47.5l5.5-17.3c1.2-3.7,2.9-10.1,2.9-10.1h.2s1.6,6.4,2.8,10.1l5.4,17.3h-16.8Z"/>
+                      <path d="M492.3,58c-2.2,0-7.9.2-7.9.2v-.3s4.1-4.5,5.8-6.4l30-36V1.6h-55.7v15h26.4c1.6,0,6.8-.2,6.8-.2v.3s-3.6,3.9-4.8,5.3l-30.9,37v14.1h59.5v-15.1h-29.2Z"/>
+                    </g>
+                  </g>
+                </svg>
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">reel</a>
+            <a href="#work">work</a>
+            <a href="#about">about</a>
+            <a href="contact.html" class="active">contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-container">
+            <h1>Contact</h1>
+            <p style="color: #a1a1aa;">Form coming soon...</p>
+        </div>
+    </main>
+
+</body>
+</html>
