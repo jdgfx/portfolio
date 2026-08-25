@@ -66,12 +66,12 @@
             color: #78706a;
             text-decoration: none;
             font-size: 1.15rem;
-            text-transform: none; /* Title / Sentence Case Everywhere */
+            text-transform: none;
             transition: color 0.2s ease;
         }
 
         nav a:hover, nav a.active {
-            color: #24201e; /* Darker Warm Charcoal */
+            color: #24201e;
         }
 
         /* Main Single-Column Container */
@@ -98,6 +98,20 @@
             margin-bottom: 1.5rem;
         }
 
+        /* Two-Line Magazine Drop Cap */
+        .bio-paragraph.drop-cap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-style: italic;
+            font-weight: 700;
+            font-size: 3.3rem;
+            line-height: 0.8;
+            float: left;
+            margin-top: 0.15rem;
+            margin-right: 0.5rem;
+            margin-bottom: -0.1rem;
+            color: #24201e;
+        }
+
         /* CTA Section */
         .cta-section {
             margin-top: 1rem;
@@ -107,7 +121,7 @@
 
         .cta-section h2 {
             font-family: 'Playfair Display', Georgia, serif;
-            font-size: 2.25rem;
+            font-size: 1.8rem; /* Reduced by ~20% */
             font-weight: 700;
             font-style: italic;
             color: #24201e;
@@ -123,8 +137,8 @@
 
         .cta-button {
             display: inline-block;
-            background-color: #24201e; /* Brownish-Charcoal Button */
-            color: #f5f0eb; /* Warm Cream Text */
+            background-color: #24201e;
+            color: #f5f0eb;
             font-family: 'Inter', sans-serif;
             text-decoration: none;
             padding: 0.9rem 1.85rem;
@@ -154,7 +168,7 @@
             }
 
             .cta-section h2 {
-                font-size: 1.85rem;
+                font-size: 1.5rem;
             }
         }
     </style>
@@ -193,7 +207,7 @@
     <main>
         <div class="content-container">
             <section>
-                <p class="bio-paragraph">
+                <p class="bio-paragraph drop-cap">
                     Josh Diaz is a Creative Director and Multimedia Producer with over 15 years of experience leading visual storytelling, motion design, and high-impact media production. Based out of Olney, MD, he specializes in building carefully curated visual systems, promotional campaigns, and brand experiences across broadcast, digital, and environmental mediums.
                 </p>
                 <p class="bio-paragraph">
